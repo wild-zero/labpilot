@@ -1,0 +1,21 @@
+{
+  "name": "labpilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LabPilot 实验自动化平台：登录教学平台 → 同步课堂 → 流水线逐关求解、评测、修复，异常转人工",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node server/main.mjs",
+    "dev": "node --watch server/main.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "ui": "node scripts/inspect-ui.mjs",
+    "tickets": "node scripts/tickets-test.mjs",
+    "shot": "node scripts/shot-support.mjs",
+    "recipes": "node scripts/recipes.mjs",
+    "aksk": "node scripts/extract-aksk.mjs",
+    "probe": "node scripts/probe-upstream.mjs"
+  }
+}

@@ -1,0 +1,20 @@
+# 本地凭据：绝不入库
+.env
+.env.*
+!.env.example
+.aksk.json
+
+# 运行数据：里有学生账号、上游会话、题库，禁止外传
+data/
+*.sqlite
+*.sqlite-*
+*.db
+
+# 截图与临时产物
+shots/
+.tmp*/
+*.bak-*
+*.log
+node_modules/
+Thumbs.db
+.DS_Store

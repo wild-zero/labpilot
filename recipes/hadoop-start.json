@@ -1,0 +1,14 @@
+{
+  "id": "hadoop-start",
+  "title": "前置：把 Hadoop 常驻进程拉起来（代码题评测依赖 HDFS）",
+  "precondition": true,
+  "match": {
+    "subject_any": ["HDFS", "Hadoop", "MapReduce", "Hive"],
+    "description_any": ["hadoop fs", "HDFS", "分布式文件系统", "hdfs://", "start-dfs"],
+    "file_any": [".java", "test.sh", "hint.txt"]
+  },
+  "min_score": 3,
+  "setup": [
+    "/usr/local/hadoop/sbin/start-dfs.sh >/dev/null 2>&1; sleep 15; source /etc/profile >/dev/null 2>&1; jps | wc -l"
+  ]
+}
